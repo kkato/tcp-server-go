@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net"
+	"time"
 )
 
 func main() {
@@ -13,7 +14,15 @@ func main() {
 		return
 	}
 
-	requestData := "request"
+	RequestAndResponse(conn, "request0")
+	RequestAndResponse(conn, "request1")
+	RequestAndResponse(conn, "request2")
+	RequestAndResponse(conn, "close")
+	time.Sleep(time.Hour)
+
+}
+
+func RequestAndResponse(conn net.Conn, requestData string) {
 	requestByteData, err := json.Marshal(requestData)
 	if err != nil {
 		fmt.Println(err)
@@ -31,5 +40,4 @@ func main() {
 
 	fmt.Print("response: ")
 	fmt.Println(string(responseData[:n]))
-
 }

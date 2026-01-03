@@ -1,4 +1,4 @@
-# TCP Server Go
+# tcp-server-go
 
 GoでTCPサーバー・クライアントを実装したプロジェクトです。
 

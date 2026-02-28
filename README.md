@@ -2,7 +2,7 @@
 
 GoでTCPサーバー・クライアントを実装したプロジェクトです。
 
-[Udemy - Goで作る大規模アプリケーション](https://www.udemy.com/course/go-daian)の一環として作成しました。
+[Udemy - ゼロからGo言語でウェブフレームワークを作ります](https://www.udemy.com/course/go-daian)の一環として作成しました。
 
 ## 概要
 
